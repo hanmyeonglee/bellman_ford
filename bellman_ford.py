@@ -8,7 +8,7 @@ def bellman_ford(edges, n_vertices, start):
     distance[start] = 0
 
     for _ in range(n_vertices):
-        distance = cp.min(distance + edges, axis=-1)       
+        distance = cp.min(distance + edges, axis=-1)
     
     return distance
 
